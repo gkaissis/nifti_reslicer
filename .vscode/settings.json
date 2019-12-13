@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/Users/georgioskaissis/opt/miniconda3/envs/nifti/bin/python",
+    "python.formatting.provider": "black",
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.linting.enabled": true
+}
