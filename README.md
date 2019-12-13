@@ -11,6 +11,7 @@ Usage:
 - The software asks you for the location of a volumes and a masks folder. It will accept both `.nii` and `.nii.gz`. Make sure the files inside the folder are named the same:
 
 E.g.:
+
 ```
 |_Volumes
 |___file1.nii.gz
