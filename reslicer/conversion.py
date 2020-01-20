@@ -21,7 +21,7 @@ def get_zooms(image:nib.Nifti1Image, mask:nib.Nifti1Image)-> Tuple[Tuple, Tuple]
     assert all(im_zooms) == all(mask_zooms), ("Image and Mask Pixel Dimensions do not match.")
     return (im_zooms, mask_zooms)
 
-def convert(image:nib.Nifti1Image, mask:nib.Nifti1Image, new_pixel_dims:Tuple[float,float,float]=(1.,1.,1.))-> Tuple[Tuple,Tuple]:
+def convert(image:nib.Nifti1Image, mask:nib.Nifti1Image, new_pixel_dims:Tuple[float,...]=(1.,1.,1.))-> Tuple[Tuple,Tuple]:
 
     im_pixels, mask_pixels=get_pixels(image, mask)
     im_affine, mask_affine=get_affines(image, mask)
